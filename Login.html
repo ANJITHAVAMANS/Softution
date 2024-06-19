@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+</head>
+<script>
+    function getlog()
+    {
+        let c = document.getElementById("username").value;
+        let d = document.getElementById("password").value;
+        
+        if(c!='admin'&&d!='123'){
+            alert("invalid username and passwords")
+         }
+        else if(c=="admin")
+        {
+            if(d=="123")
+            {
+                alert("Login Successfully")
+            }
+            else
+            {
+                alert("invalid password")
+            }
+        }
+        else 
+        {
+            alert("invalid username")
+        }
+        
+        
+    }
+            
+    
+</script>
+<body style="background-color: blueviolet;background-image: url(https://wallpapercave.com/wp/wp9764008.jpg);background-repeat: no-repeat;background-size: 100%;">
+    <center><br><br><br><br><br><br>
+    <form style="display: table;width: 25%; height:300px; background:rgba(0, 0, 0,0.4);">
+    <style>
+        h1{
+            color: aliceblue;
+            text-shadow: 1px;
+        }
+        form{
+            color: aliceblue;
+        }
+        
+    </style>
+    
+    <h1 ><centre>LOGIN FORM</centre></h1><br><br>
+    Username:&nbsp;<input type="text"id="username" style="color:blue; background-color: rgba(0, 0, 0, 0.692);"><br><br>
+    Password: &nbsp;<input type="password"id="password" style="background-color: rgba(0, 0, 0, 0.692);color: aliceblue;"><br><br>
+    <a href="#" ><input type="button"  value="Login"id="login" onclick="getlog()" style="color: rgb(255, 255, 255);border-color: rgb(252, 252, 252);border-style:dotted;background-color:green;">
+    </a></center>
+
+</form>
+</body>
+</script>
+</html>
